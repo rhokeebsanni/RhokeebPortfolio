@@ -10,10 +10,17 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900 hover:-translate-y-2
-            hover:border-violet-500
-            transition-all
-            duration-300"
+            className="
+p-6
+rounded-2xl
+border
+border-zinc-800
+bg-zinc-900
+hover:border-violet-500
+hover:-translate-y-2
+transition-all
+duration-300
+"
           >
             <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
 
@@ -28,6 +35,26 @@ const Projects = () => {
                   {tech}
                 </span>
               ))}
+            </div>
+
+            <div className="flex gap-4">
+              <a
+                href={project.github}
+                target="_blank"
+                rel="noreferrer"
+                className="text-violet-500 hover:text-violet-400"
+              >
+                GitHub →
+              </a>
+
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noreferrer"
+                className="text-violet-500 hover:text-violet-400"
+              >
+                Live Demo →
+              </a>
             </div>
           </div>
         ))}

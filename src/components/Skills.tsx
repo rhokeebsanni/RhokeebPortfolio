@@ -21,13 +21,14 @@ const Skills = () => {
         {skills.map((skill) => (
           <div
             className="
-            p-5
-            rounded-xl
-            border
-            border-zinc-800
-            bg-zinc-900
-            hover:border-violet-500
-            transition
+          p-5
+          rounded-xl
+          border
+          border-zinc-800
+          bg-zinc-900
+          hover:border-violet-500
+          hover:-translate-y-1
+          transition-all
           "
           >
             {skill}

@@ -25,9 +25,34 @@ const Hero = () => {
           </p>
 
           <div className="mt-10 flex gap-4 flex-wrap">
-            <button>View Projects</button>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <a
+                href="#projects"
+                className="
+      px-6 py-3
+      bg-violet-600
+      rounded-xl
+      hover:bg-violet-700
+      transition
+    "
+              >
+                View Projects
+              </a>
 
-            <button>Download Resume</button>
+              <a
+                href="#contact"
+                className="
+      px-6 py-3
+      border
+      border-zinc-700
+      rounded-xl
+      hover:border-violet-500
+      transition
+    "
+              >
+                Contact Me
+              </a>
+            </div>
           </div>
         </motion.div>
       </div>
