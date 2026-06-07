@@ -4,7 +4,11 @@ import { projects } from "../data/projects";
 const Projects = () => {
   return (
     <Section id="projects">
-      <h2 className="text-4xl font-bold mb-12">Projects</h2>
+      <div className="mb-12">
+        <p className="text-violet-500 mb-3">Featured Work</p>
+
+        <h2 className="text-4xl font-bold">Projects I've Built</h2>
+      </div>
 
       <div className="grid md:grid-cols-2 gap-6">
         {projects.map((project) => (
@@ -39,25 +43,28 @@ duration-300
 
             <p className="text-zinc-400 mb-4">{project.description}</p>
 
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 mb-6">
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="text-sm px-3 py-1 rounded-full bg-zinc-800"
+                  className="text-sm px-3 py-1 rounded-full bg-zinc-800
+                  text-zinc-300
+                  border
+                  border-zinc-700"
                 >
                   {tech}
                 </span>
               ))}
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex gap-6 text-sm font-medium">
               <a
                 href={project.github}
                 target="_blank"
                 rel="noreferrer"
                 className="text-violet-500 hover:text-violet-400"
               >
-                GitHub →
+                View Code →
               </a>
 
               <a
@@ -66,7 +73,7 @@ duration-300
                 rel="noreferrer"
                 className="text-violet-500 hover:text-violet-400"
               >
-                Live Demo →
+                Live Site →
               </a>
             </div>
           </div>

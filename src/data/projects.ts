@@ -1,11 +1,13 @@
 
 import rebateDashboard from "../assets/projects/rebate-dashboard.png";
+import dailyBrew from "../assets/projects/daily-brew.png";
 
 export const projects = [
   {
     title: "Task Manager",
     description:
       "Full-stack task management application with Google authentication and task management features.",
+    image: dailyBrew,
     github: "YOUR_GITHUB_LINK",
     live: "YOUR_LIVE_LINK",
     technologies: ["React", "Node.js", "MongoDB"],
