@@ -17,11 +17,18 @@ const Skills = () => {
     <Section id="skills">
       <h2 className="text-4xl font-bold mb-12">Skills</h2>
 
-      <div className="flex flex-wrap gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {skills.map((skill) => (
           <div
-            key={skill}
-            className="px-5 py-3 rounded-xl border border-zinc-800 bg-zinc-900"
+            className="
+            p-5
+            rounded-xl
+            border
+            border-zinc-800
+            bg-zinc-900
+            hover:border-violet-500
+            transition
+          "
           >
             {skill}
           </div>

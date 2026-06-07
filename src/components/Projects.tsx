@@ -10,7 +10,10 @@ const Projects = () => {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900"
+            className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900 hover:-translate-y-2
+            hover:border-violet-500
+            transition-all
+            duration-300"
           >
             <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
 
