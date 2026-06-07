@@ -22,6 +22,19 @@ transition-all
 duration-300
 "
           >
+            <img
+              src={project.image}
+              alt={project.title}
+              className="
+    w-full
+    h-56
+    object-cover
+    rounded-xl
+    mb-6
+    border
+    border-zinc-800
+  "
+            />
             <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
 
             <p className="text-zinc-400 mb-4">{project.description}</p>
