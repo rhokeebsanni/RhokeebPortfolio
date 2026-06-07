@@ -4,15 +4,22 @@ const Contact = () => {
   return (
     <section id="contact" className="py-32">
       <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-4xl font-bold mb-8">Let's Connect</h2>
+        <div className="mb-12">
+          <p className="text-violet-500 font-medium mb-3">Contact</p>
 
-        <p className="text-zinc-400 mb-8 max-w-xl">
-          I'm always interested in discussing projects, internships,
-          collaborations, and new opportunities.
-        </p>
+          <h2 className="text-4xl font-bold">Let's Build Something Together</h2>
 
-        <div className="flex gap-6 text-2xl">
-          <a href="mailto:your@email.com">
+          <p className="text-zinc-400 mt-4 max-w-2xl">
+            I'm currently open to internships, collaborations, and opportunities
+            to work on interesting projects.
+          </p>
+        </div>
+
+        <div className="flex gap-6 text-3xl">
+          <a
+            href="mailto:your@email.com"
+            className="text-zinc-400 hover:text-violet-400 transition-colors"
+          >
             <FaEnvelope />
           </a>
 
@@ -20,6 +27,7 @@ const Contact = () => {
             href="https://github.com/rhokeebsanni"
             target="_blank"
             rel="noreferrer"
+            className="text-zinc-400 hover:text-violet-400 transition-colors"
           >
             <FaGithub />
           </a>
@@ -28,6 +36,7 @@ const Contact = () => {
             href="https://linkedin.com/in/your-linkedin"
             target="_blank"
             rel="noreferrer"
+            className="text-zinc-400 hover:text-violet-400 transition-colors"
           >
             <FaLinkedin />
           </a>

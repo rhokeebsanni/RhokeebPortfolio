@@ -23,7 +23,19 @@ const Hero = () => {
 
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
               Building Modern
-              <span className="block text-violet-500">Web Experiences</span>
+              <span
+                className="
+    block
+    bg-gradient-to-r
+    from-violet-400
+    via-violet-500
+    to-purple-600
+    bg-clip-text
+    text-transparent
+  "
+              >
+                Web Experiences
+              </span>
             </h1>
 
             <p className="mt-8 text-zinc-400 text-lg md:text-xl leading-relaxed">

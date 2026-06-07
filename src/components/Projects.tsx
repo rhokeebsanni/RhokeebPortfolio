@@ -15,6 +15,8 @@ const Projects = () => {
           <div
             key={project.title}
             className="
+            group
+            overflow-hidden
 p-6
 rounded-2xl
 border
@@ -30,14 +32,17 @@ duration-300
               src={project.image}
               alt={project.title}
               className="
-    w-full
-    h-56
-    object-cover
-    rounded-xl
-    mb-6
-    border
-    border-zinc-800
-  "
+w-full
+h-56
+object-cover
+rounded-xl
+mb-6
+border
+border-zinc-800
+transition-transform
+duration-500
+group-hover:scale-105
+"
             />
             <h3 className="text-2xl font-semibold mb-4">{project.title}</h3>
 
@@ -47,10 +52,16 @@ duration-300
               {project.technologies.map((tech) => (
                 <span
                   key={tech}
-                  className="text-sm px-3 py-1 rounded-full bg-zinc-800
-                  text-zinc-300
-                  border
-                  border-zinc-700"
+                  className="
+text-sm
+px-3
+py-1
+rounded-full
+bg-zinc-800
+border
+border-zinc-700
+text-zinc-300
+"
                 >
                   {tech}
                 </span>

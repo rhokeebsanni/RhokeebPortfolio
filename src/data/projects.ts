@@ -4,7 +4,7 @@ import dailyBrew from "../assets/projects/daily-brew.png";
 
 export const projects = [
   {
-    title: "Task Manager",
+    title: "Daily Brew",
     description:
       "Full-stack task management application with Google authentication and task management features.",
     image: dailyBrew,
