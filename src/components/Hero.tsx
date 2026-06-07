@@ -59,7 +59,7 @@ const Hero = () => {
               </a>
 
               <a
-                href="https://github.com/rhokeebsanni"
+                href="/resume.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="
@@ -72,7 +72,7 @@ const Hero = () => {
                   transition
                 "
               >
-                GitHub
+                Download Resume
               </a>
             </div>
           </motion.div>

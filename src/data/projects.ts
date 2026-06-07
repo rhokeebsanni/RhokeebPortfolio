@@ -8,8 +8,8 @@ export const projects = [
     description:
       "Full-stack task management application with Google authentication and task management features.",
     image: dailyBrew,
-    github: "YOUR_GITHUB_LINK",
-    live: "YOUR_LIVE_LINK",
+    github: "https://github.com/rhokeebsanni/daily-brew",
+    live: "http://daily-brew-kohl.vercel.app",
     technologies: ["React", "Node.js", "MongoDB"],
   },
 
@@ -18,8 +18,8 @@ export const projects = [
     description:
       "A pricing management platform featuring Google authentication, calculation history, material management, and automated rebate calculations.",
     image: rebateDashboard,
-    github: "...",
-    live: "...",
-    technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Google OAuth"],
+    github: "https://github.com/rhokeebsanni/wholesale-pricing-engine",
+    live: "https://wholesale-pricing-engine.vercel.app",
+    technologies: ["React", "Node.js", "MongoDB", "Google OAuth"],
   },
 ];

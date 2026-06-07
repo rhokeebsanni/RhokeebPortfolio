@@ -17,7 +17,7 @@ const Contact = () => {
 
         <div className="flex gap-6 text-3xl">
           <a
-            href="mailto:your@email.com"
+            href="mailto:rhokeebsanni@gmail.com"
             className="text-zinc-400 hover:text-violet-400 transition-colors"
           >
             <FaEnvelope />
@@ -33,7 +33,7 @@ const Contact = () => {
           </a>
 
           <a
-            href="https://linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/rhokeeb-sanni"
             target="_blank"
             rel="noreferrer"
             className="text-zinc-400 hover:text-violet-400 transition-colors"
