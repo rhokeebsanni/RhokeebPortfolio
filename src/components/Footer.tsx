@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
-    <footer className="border-t border-zinc-800 py-8">
+    <footer className="border-t border-[#D4C5B5] py-8 bg-[#F7F3EE]">
       <div className="max-w-6xl mx-auto px-6">
-        <p className="text-zinc-500 text-center">
+        <p className="text-[#8C7260] text-center">
           © 2026 Rhokeeb Sanni. Built with React and Tailwind CSS.
         </p>
       </div>
