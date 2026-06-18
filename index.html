@@ -3,15 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link href="/src/index.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      Rhokeeb Sanni | Full Stack Developer
-    </title>
+    <meta name="theme-color" content="#F7F3EE" />
+
+    <title>Rhokeeb Sanni — Full Stack Developer</title>
     <meta
-  name="description"
-  content="Portfolio of Rhokeeb Sanni, Full Stack Developer building modern web applications with React, TypeScript, Node.js and MongoDB."
-/>
+      name="description"
+      content="Rhokeeb Sanni is a full stack developer building fast, modern web applications with React, TypeScript, Node.js and MongoDB. Open to internships and frontend / full stack roles."
+    />
+    <meta name="author" content="Rhokeeb Sanni" />
+
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rhokeeb Sanni — Full Stack Developer" />
+    <meta
+      property="og:description"
+      content="Full stack developer crafting fast, modern web apps with React, TypeScript and Node.js. Open to internships and roles."
+    />
+    <meta property="og:image" content="/profile.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Apply saved theme before paint to avoid a flash of the wrong palette.
+      (function () {
+        try {
+          var stored = localStorage.getItem("theme");
+          var theme =
+            stored ||
+            (window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light");
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (e) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
