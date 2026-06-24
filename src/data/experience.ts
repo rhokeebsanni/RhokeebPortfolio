@@ -22,6 +22,15 @@ export const timeline: TimelineEntry[] = [
     kind: "learning",
   },
   {
+    period: "2026",
+    title: "Built SnapSaas",
+    org: "Self-directed SaaS product",
+    description:
+      "Designed and shipped a full-stack SaaS that converts any website URL into a polished marketing screenshot. Built a Playwright capture pipeline, BullMQ worker queue, animated GIF export engine, and a Next.js editor with 3D transforms and post-processing effects.",
+    tags: ["Next.js", "Playwright", "BullMQ", "Postgres", "Better Auth"],
+    kind: "build",
+  },
+  {
     period: "2025",
     title: "Built the Wholesale Pricing Engine",
     org: "Self-directed product",

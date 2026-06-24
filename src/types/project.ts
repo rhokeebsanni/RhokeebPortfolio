@@ -2,7 +2,7 @@ export interface Project {
   title: string;
   tagline: string;
   description: string;
-  image: string;
+  image?: string;
   github: string;
   live: string;
   technologies: string[];

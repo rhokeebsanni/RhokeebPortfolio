@@ -44,12 +44,18 @@ const Projects = () => {
                       </span>
                     </div>
                     <div className="relative overflow-hidden">
-                      <img
-                        src={project.image}
-                        alt={`${project.title} screenshot`}
-                        loading="lazy"
-                        className="aspect-[16/10] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
-                      />
+                      {project.image ? (
+                        <img
+                          src={project.image}
+                          alt={`${project.title} screenshot`}
+                          loading="lazy"
+                          className="aspect-[16/10] w-full object-cover object-top transition-transform duration-700 group-hover:scale-[1.04]"
+                        />
+                      ) : (
+                        <div className="aspect-[16/10] w-full bg-gradient-to-br from-accent/10 via-surface-2 to-accent/5 flex items-center justify-center">
+                          <span className="text-muted text-sm font-medium">Preview coming soon</span>
+                        </div>
+                      )}
                       <div className="absolute inset-0 bg-gradient-to-t from-accent/30 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                       <div className="absolute inset-0 grid place-items-center opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                         <span className="inline-flex items-center gap-2 rounded-full bg-surface/95 px-5 py-2.5 text-sm font-semibold text-text shadow-lg backdrop-blur">
