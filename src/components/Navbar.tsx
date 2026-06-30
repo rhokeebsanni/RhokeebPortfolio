@@ -46,18 +46,18 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 w-full overflow-x-hidden transition-all duration-300 ${
         scrolled
           ? "glass border-b border-border shadow-[0_8px_30px_-12px_rgba(28,25,23,0.18)]"
           : "border-b border-transparent"
       }`}
     >
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-4 sm:px-6">
         <a
           href="#top"
-          className="focus-ring group flex items-center gap-2 font-display text-lg font-bold"
+          className="focus-ring group flex min-w-0 shrink-0 items-center gap-2 font-display text-lg font-bold"
         >
-          <span className="grid h-9 w-9 place-items-center rounded-lg bg-accent text-accent-contrast shadow-sm transition-transform duration-300 group-hover:-rotate-6">
+          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-accent text-accent-contrast shadow-sm transition-transform duration-300 group-hover:-rotate-6">
             RS
           </span>
           <span className="hidden text-text sm:block">
@@ -90,7 +90,7 @@ const Navbar = () => {
           })}
         </div>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           <ThemeToggle />
           <a
             href="/resume.pdf"
