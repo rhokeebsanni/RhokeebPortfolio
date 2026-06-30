@@ -13,7 +13,7 @@ import {
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
-import profile from "../assets/profile_enhanced.png";
+import profile from "../assets/profile_enhanced.jpg";
 
 const roles = [
   "Full Stack Developer",
