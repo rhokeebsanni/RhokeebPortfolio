@@ -70,7 +70,7 @@ const Contact = () => {
 
       <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
         {/* Info panel */}
-        <Reveal from="right">
+        <Reveal from="right" className="min-w-0">
           <div className="flex h-full flex-col gap-6 rounded-2xl border border-border bg-surface p-7">
             <div className="inline-flex w-fit items-center gap-2 rounded-full border border-border bg-bg px-3 py-1.5 text-sm text-text-soft">
               <span className="relative flex h-2.5 w-2.5">
@@ -81,8 +81,8 @@ const Contact = () => {
             </div>
 
             <p className="text-text-soft">
-              Whether it's an internship, a freelance build, or a full-time
-              role — I'd love to hear what you're working on.
+              Whether it's an internship, a freelance build, or a full-time role
+              — I'd love to hear what you're working on.
             </p>
 
             <button
@@ -145,7 +145,7 @@ const Contact = () => {
         </Reveal>
 
         {/* Form */}
-        <Reveal from="left">
+        <Reveal from="left" className="min-w-0">
           <form
             onSubmit={handleSubmit}
             className="rounded-2xl border border-border bg-surface p-7"
@@ -160,9 +160,7 @@ const Contact = () => {
                     required
                     type="text"
                     value={form.name}
-                    onChange={(e) =>
-                      setForm({ ...form, name: e.target.value })
-                    }
+                    onChange={(e) => setForm({ ...form, name: e.target.value })}
                     placeholder="Jane Recruiter"
                     className={field}
                   />
